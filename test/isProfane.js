@@ -25,9 +25,9 @@ describe('filter', function(){
 			assert(filter.isProfane('willies'));
 		});
 
-		it('Should detect words not in the list but are similar using soundex', function() {
-			assert(filter.isProfane('biotch'));
-			assert(filter.isProfane('asswhole'));
+		it('should not over-eagerly mark words as profane', function () {
+			assert(filter.isProfane("Should only take a minute but I don't own a mower") === false);
+			assert(filter.isProfane('I have soldered a Radio Shack replacement jack onto the wire') === false);
 		});
 	});
 });

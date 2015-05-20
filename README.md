@@ -1,4 +1,4 @@
-bad-words v1.1.0
+bad-words v1.2.0
 ========
 
 A javascript filter for badwords
@@ -10,7 +10,7 @@ npm install bad-words
 #Examples
 ```
 var Filter = require('bad-words'),
-  filter = new Filter();
+    filter = new Filter();
 
 console.log(filter.clean("Don't be an ash0le"));
 ```
@@ -47,6 +47,7 @@ npm test
 
 ###Release Notes
 - v1.1.0 / Mar 17 2015: Added soundex support for comparing words to things not in the list
+- v1.2.0 / May 20 2015: Removed soundex support to thwart over-eager profanity checking
 
 ========
 

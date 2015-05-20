@@ -1,6 +1,6 @@
 {
   "name": "bad-words",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A javascript filter for bad words",
   "main": "./lib/badwords",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/web-mech/badwords.git"
+    "url": "git://github.com/mmerkes/badwords.git"
   },
   "keywords": [
     "curse",
@@ -20,8 +20,7 @@
     "filter"
   ],
   "dependencies": {
-    "badwords-list": "^1.0.0",
-    "soundex": "^0.2.1"
+    "badwords-list": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "1.14.0",
